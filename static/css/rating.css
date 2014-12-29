@@ -1,0 +1,62 @@
+/* 'star-rating' component */
+.starRate {position:relative; margin:0px; overflow:hidden; zoom:1;}
+.starRate ul {width:160px; margin:0; padding:0;}
+.starRate li {display:inline; list-style:none;}
+.starRate a, .starRate b {background:url(../res/star_rate.gif) left top repeat-x;}
+.starRate a {float:right; margin:0 80px 0 -144px; width:80px; height:16px; background-position:left 16px; color:#000; text-decoration:none;}
+.starRate a:hover {background-position:left -32px;}
+.starRate b {position:absolute; z-index:-1; width:80px; height:16px; background-position:left -16px;}
+.starRate div b {left:0px; bottom:0px; background-position:left top;}
+.starRate a span {position:absolute; left:-300px;}
+.starRate a:hover span {left:90px; width:100%;}
+
+/*
+.starRating{
+  display        : inline-block;
+  position       : relative;
+  height         : 16px;
+  background     : url('../res/star_rate.gif') repeat-x 0 0;
+  vertical-align : bottom;
+}
+
+.starRating div{
+  float    : left;
+  position : relative;
+  height   : 16px;
+}
+
+.starRating input{
+  position : relative;
+  z-index  : 1;
+  width    : 16px;
+  height   : 16px;
+  margin   : 0;
+  padding  : 0;
+  opacity  : 0;
+}
+
+.starRating label{
+  position : absolute;
+  top      : 0;
+  left     : 0;
+  width    : 100%;
+  height   : 16px;
+}
+
+.starRating span{
+  display : none;
+}
+
+.starRating       input:checked       + label,
+.starRating:hover input:checked:hover + label{
+  background : url('../res/star_rate.gif') repeat-x 0 -16px;
+}
+
+.starRating:hover input:checked + label{
+  background : transparent;
+}
+
+.starRating:hover input:hover + label{
+  background : url('../res/star_rate.gif') repeat-x 0 -32px;
+}
+*/
