@@ -82,7 +82,7 @@ function calcRoute() {
       destination: places[places.length - 1].getAttribute("address"),
       waypoints: waypts,
       optimizeWaypoints: true,
-      travelMode: google.maps.TravelMode.DRIVING
+      travelMode: $('input[name=method]:checked').val() 
   };
   directionsService.route(request, function(response, status) {
     if (status == google.maps.DirectionsStatus.OK) {
@@ -108,3 +108,8 @@ function calcRoute() {
     }
   }
 }
+
+
+$( document ).ready(function() {
+    calcRoute();
+});
