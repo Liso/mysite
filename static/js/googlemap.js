@@ -1,6 +1,5 @@
 var map;
 var geocoder;
-var directionsDisplay;
 var directionsDisplays = [];
 var directionsService = new google.maps.DirectionsService();
 var marker = new Array();
@@ -55,10 +54,10 @@ function addMarker(address, name, day) {
 
 
 function calcRoute() {
-        alert(directionsDisplays.length);
   for (var dir = 0; dir < directionsDisplays.length; dir++) {
-        directionsDisplays[i].setMap(null);
+        directionsDisplays[dir].setMap(null);
   }
+  directionsDisplays = [];
   for (var day = 1; day < 24; day++) {
     var places = document.getElementsByClassName(day);
     if (places.length == 0) {
@@ -71,7 +70,6 @@ function calcRoute() {
         strokeWeight: 10
         }; 
 
-        directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers: true, polylineOptions: polylineOptionsActual});
   var waypts = [];
   for (var i = 1; i < places.length - 1; i++) {
       waypts.push({
@@ -88,8 +86,9 @@ function calcRoute() {
   };
   directionsService.route(request, function(response, status) {
     if (status == google.maps.DirectionsStatus.OK) {
+        var directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers: true, polylineOptions: polylineOptionsActual});
         directionsDisplay.setMap(map);
-      directionsDisplay.setDirections(response);
+        directionsDisplay.setDirections(response);
         directionsDisplays.push(directionsDisplay);
 /*
       var route = response.routes[0];
@@ -108,5 +107,4 @@ function calcRoute() {
   });
     }
   }
-    alert(directionsDisplays.length);
 }
