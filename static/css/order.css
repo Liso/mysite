@@ -34,6 +34,10 @@
     right: 0;
 }
 
+#id_timeLimit
+{
+    width: 50px;
+}
 
   #gallery { float: left; width: 65%; min-height: 12em; }
   .gallery.custom-state-active { background: #eee; }

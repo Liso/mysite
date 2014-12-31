@@ -12,6 +12,9 @@ $(function() {
       cancel: ".portlet-toggle",
       placeholder: "portlet-placeholder ui-corner-all",
       stop: function( event, ui ) {
+          var day = ui.item.parent().siblings("#day").attr("value");
+          ui.item.find("input[type=hidden]").attr("class", day);
+          ui.item.find("input[type=hidden]").attr("name", day);
           marker[ui.item.find(".portlet-header").attr("name")].set("labelContent", ui.item.parent().siblings("h4").html());
       }
     });
