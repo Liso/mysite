@@ -32,3 +32,11 @@ $(function() {
       icon.closest( ".portlet" ).find( ".portlet-content" ).toggle();
     });
 });
+
+  $(function() {
+    $( "#radio" ).buttonset();
+  });
+  $(function() {
+    $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+    $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+  });
