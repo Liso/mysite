@@ -5,10 +5,23 @@ tbody {
 }
 table.place_table th, table.place_table td {
     padding: 20px;
-    text-align: left;
 }
 
 img {
 max-width:100%;
 max-height:100%;
+}
+
+.score {
+	text-align: left;
+	color: #FE9A00;
+}
+.list-spend-time {
+	color: #FE9A00;
+	text-align: center;
+	font-size: 30px;
+}
+
+.heart {
+	align="right"
 }
