@@ -1,4 +1,5 @@
 tbody {
+    display:block;
     border: 10px double black;
     border-collapse: collapse;
 }
