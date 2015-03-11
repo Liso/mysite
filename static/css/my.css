@@ -1,7 +1,5 @@
 tbody {
     display:block;
-    border: 10px double black;
-    border-collapse: collapse;
 }
 table.place_table th, table.place_table td {
     padding: 20px;
