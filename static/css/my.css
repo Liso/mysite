@@ -33,3 +33,27 @@ max-height:100%;
 .list-add-button {
 	text-align: right;
 }
+
+
+.top-container {
+  background-color: #F8FBFB;
+  padding:20px 0;
+}
+
+.topInfo {
+	margin: 10px auto 10px auto;
+	width: 1000px;
+	background-color: white;
+}
+
+.topPic {
+  display: inline-block;
+  overflow: hidden;
+}
+
+#topTextInfo {
+	display: inline-block; 
+	float: right;
+	padding-top: 56px;
+  margin-right: 20px;
+}
