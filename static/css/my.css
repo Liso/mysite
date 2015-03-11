@@ -13,15 +13,23 @@ max-height:100%;
 }
 
 .score {
-	text-align: left;
+	text-align: right;
 	color: #FE9A00;
 }
 .list-spend-time {
 	color: #FE9A00;
-	text-align: center;
+	text-align: right;
 	font-size: 30px;
 }
 
 .heart {
-	align="right"
+	text-align: right;
+}
+
+.container {
+	width: 80%;
+}
+
+.list-add-button {
+	text-align: right;
 }
